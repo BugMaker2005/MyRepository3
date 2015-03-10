@@ -32,24 +32,24 @@ void main()
 {
 setlocale(LC_ALL,"Rus");
 int n;
-cout<<"Ââåäè n:"<<'\n';
+cout<<"Ã‚Ã¢Ã¥Ã¤Ã¨ n:"<<'\n';
 cin>>n;
 int *A=new int[n];
-cout<<"Ââåäè ìàññèâ"<<'\n';
+cout<<"Ã‚Ã¢Ã¥Ã¤Ã¨ Ã¬Ã Ã±Ã±Ã¨Ã¢"<<'\n';
 for (int i=0; i<n; i++)
 {
 cin>>A[i];
 }
 srand(time(NULL));
-cout<<"Èñõîäíûé ìàññèâ: ";
+cout<<"ÃˆÃ±ÃµÃ®Ã¤Ã­Ã»Ã© Ã¬Ã Ã±Ã±Ã¨Ã¢: ";
 for (int i=0; i<n; i++)
 {
 cout<<A[i]<<" ";
 }
 first=0; last=n-1;
 quicksort(A, first, last);
-cout<<endl<<"Îòñîðòèðîâàííûé ìàññèâ: ";
+cout<<endl<<"ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã­Ã­Ã»Ã© Ã¬Ã Ã±Ã±Ã¨Ã¢: ";
 for (int i=0; i<n; i++) cout<<A[i]<<" ";
 delete []A;
-system("pause»void");
+system("pause>>void");
 }
